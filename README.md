@@ -24,7 +24,9 @@ First, node dictionaries are made from node information. Attributes like `latitu
 
 These dictionaries are then json-dumped, one per line, in the present state as seen in the file.
 
-**USAGE**: The file can be loaded and split at newlines and each line can be json-loaded using `json.loads()` to get back the dictionaries. Look at the scripts in the main directory of this repo for usage examples.
+**USAGE**: The file can be loaded and split at newlines and each line can be json-loaded using `json.loads()` to get back the dictionaries.
+
+**CSV FORMAT**: For more flexible usage, there is also the CSV format `all_places_csv.info`. `intocsv.py` has code to read and write to CSV using Python's inbuilt `csv`.
 
 ### Acknowledgements
 The original OSM-XML file was about 6 GB in size. The extraction was possible thanks to computational resources provided by the Kathmandu University Supercomputer Centre, which was established with equipment donated by CERN.
