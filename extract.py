@@ -53,6 +53,8 @@ for event, el in ET.iterparse(file_to_process, events=("end",)):
 			places.append(json.dumps(place, ensure_ascii=False))
 
 			el.clear()
+		else: 
+			el.clear()
 	except:
 		el.clear()
 
