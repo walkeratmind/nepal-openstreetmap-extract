@@ -31,4 +31,4 @@ These dictionaries are then json-dumped, one per line, in the present state as s
 ### Acknowledgements
 The original OSM-XML file was about 6 GB in size. The extraction was possible thanks to computational resources provided by the Kathmandu University Supercomputer Centre, which was established with equipment donated by CERN.
 
-All OSM content belong to OpenStreetMap Contributors. For usage, please refer to their terms of use.
+All OSM content belongs to OpenStreetMap Contributors. For usage, please refer to their terms of use.
