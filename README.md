@@ -28,7 +28,4 @@ These dictionaries are then json-dumped, one per line, in the present state as s
 
 **CSV FORMAT**: For more flexible usage, there is also the CSV format `all_places_csv.info`. `intocsv.py` has code to read and write to CSV using Python's inbuilt `csv`. Usage in `pandas` should not very different.
 
-### Acknowledgements
-The original OSM-XML file was about 6 GB in size. The extraction was possible thanks to computational resources provided by the Kathmandu University Supercomputer Centre, which was established with equipment donated by CERN.
-
 All OSM content belongs to OpenStreetMap Contributors. For usage, please refer to their terms of use.
