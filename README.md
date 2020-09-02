@@ -23,3 +23,9 @@ First, node dictionaries are made from node information. Attributes like `latitu
 ```
 
 These dictionaries are then json-dumped, one per line, in the present state as seen in the file.
+
+**USAGE**: The file can be loaded and split at newlines and each line can be json-loaded using `json.loads()` to get back the dictionaries.
+
+**CSV FORMAT**: For more flexible usage, there is also the CSV format `all_places_csv.info`. `intocsv.py` has code to read and write to CSV using Python's inbuilt `csv`. Usage in `pandas` should not very different.
+
+All OSM content belongs to OpenStreetMap Contributors. For usage, please refer to their terms of use.
