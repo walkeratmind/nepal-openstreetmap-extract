@@ -23,6 +23,16 @@ for j in jsons[:-1]:
 
 # READ
 
+"""
+Insert district, place names here (in lower case), which data you want to write in csv
+"""
+districts_tag = ['jhapa', 'morang', 'ilam', 'kathmandu', 'pokhara']
+
+"""
+Run this line if tags are case insensitive
+"""
+# districts_tag = [tag.lower() for tag in districts_tag]
+
 data = []
 with open("all_places_csv.info", encoding="utf-8", newline="") as f:
     reader = csv.reader(f, delimiter=',', quotechar='|')
@@ -49,7 +59,7 @@ with open('places.csv', 'w', newline='') as csvfile:
 
         location = ''
         # if node_info.has_key('name'):
-        if 'name' in node_info:
+        if 'name' in node_info and node_info['name'].lower() in districts_tag:
             location = node_info['name']
-        writer.writerow(
-            {'location': location, 'latitude': row_data[0], 'longitude': row_data[1], 'node_id': row_data[2], 'node_info': node_info})
+            writer.writerow(
+                {'location': location, 'latitude': row_data[0], 'longitude': row_data[1], 'node_id': row_data[2], 'node_info': node_info})
